@@ -13,8 +13,8 @@ Demo data is available at [here](https://drive.google.com/file/d/10QyexzHfRZ6S3d
 ## Useage
 1. Run ODTDemo.m and select proper raw TIFF stack file w/o samples in the popup window.
 2. Wait a few minutes, a Rytov.tif file will be generated at the same folder of sample raw TIFF file.
-3. You can use ImageJ/Fiji to view Rytov.tif.
-4. The votex size is also included when view with ImageJ/Fiji.
+3. You can use [ImageJ](https://imagej.net) or [Fiji](https://fiji.sc) to view Rytov.tif.
+4. The votex size is also included when view with ImageJ or Fiji.
 
 ---------
 ## Learn more about ODT
