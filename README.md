@@ -1,2 +1,2 @@
 # ODTDemo
-Demo program for Optical Diffraction Tomography (ODT) data processing
+Demo MATLAB program for Optical Diffraction Tomography (ODT) data processing
