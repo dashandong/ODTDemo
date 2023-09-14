@@ -1,5 +1,3 @@
-%  MIT License
-%  
 %  Copyright (c) 2023 Dashan Dong
 %  
 %  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,9 +34,9 @@ para_lambda = 0.415;
 % pixel size of camera (microns):
 para_PixelSize = 6.500;
 % magnification of imaging system:
-para_mag = 154.253125;
+para_mag = 100 * (200/180) * (250/180);
 % numerical aperture:
-para_NA = 1.33;
+para_NA = 1.45;
 % Conjugate term flag (Normal:1 Conjugate:-1)
 para_ConjFlag = 1;
 % VISA iterator time
