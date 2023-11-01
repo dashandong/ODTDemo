@@ -1,15 +1,15 @@
 %  Copyright (c) 2023 Dashan Dong
-%  
+%
 %  Permission is hereby granted, free of charge, to any person obtaining a copy
 %  of this software and associated documentation files (the "Software"), to deal
 %  in the Software without restriction, including without limitation the rights
 %  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %  copies of the Software, and to permit persons to whom the Software is
 %  furnished to do so, subject to the following conditions:
-%  
+%
 %  The above copyright notice and this permission notice shall be included in all
 %  copies or substantial portions of the Software.
-%  
+%
 %  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,6 @@
 %  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %  SOFTWARE.
-
 
 % Main entrance of this program
 
@@ -74,9 +73,10 @@ end
 %% Calculation Parameters
 para_SizeSpec2D = 2 * pi ./ size_Crop ./ para_PixelSize .* para_mag;
 para_SizeSpec3D = [para_SizeSpec2D, min(para_SizeSpec2D)];
-para_kBoundPixel = ceil((para_NA * 2 * pi / para_lambda) ./ para_SizeSpec2D);
 para_kmBoundPixel = ceil((para_n_m * 2 * pi / para_lambda) ./ para_SizeSpec2D);
 para_km = para_n_m * 2 * pi / para_lambda;
+para_kBoundPixel = ceil((para_NA * 2 * pi / para_lambda) ./ para_SizeSpec2D);
+para_kBoundPixel = min([para_kmBoundPixel; para_kBoundPixel]);
 
 %% Holographic Processing
 disp('Holographic Processing...');
@@ -98,5 +98,5 @@ if size_CropJointZ < size_Joint(3)
 end
 
 %% convert to refractive index
-deltaRI = real(para_n_m * sqrt(1 + (4 * pi) * f .* (para_lambda / (para_n_m * 2 * pi))^2)) - para_n_m;
+deltaRI = real(para_n_m * sqrt(1 + (4 * pi) * f .* (para_lambda / (para_n_m * 2 * pi)) ^ 2)) - para_n_m;
 func_SaveResult(deltaRI, 'Rytov.tif', 2 * pi ./ para_SizeSpec3D ./ size_Joint);
