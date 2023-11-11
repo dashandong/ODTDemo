@@ -31,9 +31,10 @@ Demo data is available for:
 ## Learn more about ODT
 
 - ODT for [live cell imaging][sr-fact], and [technical details][sr-fact-sup].
+- ODT for [studying mitopherogenesis process][spermatids-paper].
 - ODT for [imaging artificial microstructures][jlt-paper].
 
-*If this code/program helps you, please cite those papers.*
+*If this code/program helps you, please cite our papers.*
 
 [demodate_CelegansSpermatids]: https://drive.google.com/file/d/1cDtvC-lBBGq7cVr0NRfC0znxAmkCDrna/view?usp=sharing
 [demodate_Cos7_LiveCell]: https://drive.google.com/file/d/1i1_jOE4T3X6maEetQlatJ4QM_jDGpZHf/view?usp=sharing
@@ -42,3 +43,4 @@ Demo data is available for:
 [sr-fact]: https://doi.org/10.1038/s41377-020-0249-4
 [sr-fact-sup]: https://static-content.springer.com/esm/art%3A10.1038%2Fs41377-020-0249-4/MediaObjects/41377_2020_249_MOESM1_ESM.pdf
 [jlt-paper]: https://opg.optica.org/jlt/abstract.cfm?URI=jlt-40-8-2474
+[spermatids-paper]: https://doi.org/10.1038/s41556-023-01264-z
